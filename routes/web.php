@@ -5,7 +5,7 @@ use App\Http\Controllers\PaymentNotificationController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return ['message' => 'Laravel is running'];
+    return view('main');
 });
 
 Route::middleware(['auth'])->group(function () {
